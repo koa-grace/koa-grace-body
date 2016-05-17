@@ -70,7 +70,7 @@ module.exports = function (opts) {
     if (this.request.body !== undefined) return yield* next;
 
     // 如果不是以下的请求就不用做任何处理
-    if (!this.request.is(formTypes) || !this.request.is(jsonTypes) || !this.request.is(textTypes)) return yield * next;
+    if (!this.request.is(formTypes) && !this.request.is(jsonTypes) && !this.request.is(textTypes)) return yield * next;
     
     try {
       this.request.body = yield parseBody(this);
