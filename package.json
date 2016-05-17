@@ -1,0 +1,25 @@
+{
+  "name": "koa-grace-body",
+  "version": "1.0.0",
+  "description": "parse body",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG=* node --harmony ./example/app"
+  },
+  "keywords": [
+    "koa",
+    "bodyparse",
+    "body",
+    "grace-body"
+  ],
+  "dependencies": {
+    "co-body": "^4.2.0",
+    "copy-to": "^2.0.1"
+  },
+  "devDependencies": {
+    "koa-router": "^5.3.0"
+  },
+  "author": "wilee",
+  "license": "MIT",
+  "repository": "https://github.com/koa-grace/koa-grace-body.git"
+}
